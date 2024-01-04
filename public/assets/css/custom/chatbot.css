@@ -1,0 +1,463 @@
+.chatbot {
+  & p {
+    margin-bottom: 0;
+  }
+  & .activateButton {
+    z-index: 9999;
+    background-color: #324da0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50px;
+
+    border: 5px solid #577be7;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #0b2e94;
+    }
+    & * {
+      font-size: 16px;
+    }
+
+    & i {
+      font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  & .linksContainer {
+    width: min(calc(100% - 20px), 350px);
+    z-index: 9999;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    animation: displayScroll 0.3s 1 ease-out;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    min-height: 550px;
+
+    /* @media (max-width:425px) {
+      
+    } */
+
+    & .closeBtn {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      font-size: 22px;
+      color: white;
+
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+
+    & .topBar {
+      background-color: #324da0;
+    }
+    & p {
+      font-size: 18px;
+      padding-bottom: 5px;
+
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+    }
+
+    & .link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+
+      & i {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        background-color: #b9cbff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #0b2e94;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid rgb(216, 216, 216);
+      }
+      &:hover {
+        background-color: rgb(243, 243, 243);
+      }
+    }
+    & .mainLinks {
+      & .link {
+        padding: 20px 20px 75px;
+      }
+    }
+
+    & .redirectLinks {
+      & .link {
+        padding: 20px;
+      }
+    }
+
+    & .linkA {
+      &:not(:last-child) {
+        & .link {
+          border-bottom: 1px solid rgb(216, 216, 216);
+        }
+      }
+    }
+
+    & .salesHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px;
+      & p {
+        font-size: 16px;
+      }
+      & i.online {
+        color: green;
+        font-size: 10px;
+      }
+      & i.circular {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+
+        background-color: #b9cbff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #0b2e94;
+      }
+    }
+  }
+
+  & .text-white {
+    color: white;
+  }
+
+  & .cursorPointer {
+    cursor: pointer;
+  }
+}
+
+@keyframes displayScroll {
+  0% {
+    transform: translateY(100%);
+    display: none;
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateY(0%);
+    display: block;
+    opacity: 1;
+  }
+}
+
+.chatbotContainer {
+  width: 100%;
+  overflow: hidden;
+
+  & .queAnsWrapper {
+    padding: 0 40px 20px;
+    max-height: 300px;
+    height: 300px;
+    overflow-y: auto;
+
+    @media (max-width: 425px) {
+      padding: 0 25px 20px;
+    }
+
+    & p {
+      padding-bottom: 0;
+    }
+    & .botAns {
+      padding-top: 24px;
+      /* margin: 8px 0; */
+
+      & .sectionDiv {
+        position: relative;
+        background-color: rgb(229 231 235);
+        padding: 16px;
+        /* padding-left: 16px; */
+        border-radius: 8px;
+        display: inline-block;
+        /* width: 100%; */
+
+        /* @media (max-width: 425px) {
+          width: 100%;
+        } */
+
+        & p {
+          color: rgb(55 65 81);
+          font-size: 14px;
+          line-height: 20px;
+
+          & strong {
+            font-weight: bold;
+          }
+        }
+
+        & .imageWrapper {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(-50%, -50%);
+          border-radius: 100%;
+          padding: 4px;
+          background-color: #324da0;
+          border: 5px solid rgb(250, 250, 250);
+        }
+
+        & ol {
+          padding-left: 15px;
+          & li {
+            list-style: decimal;
+          }
+        }
+      }
+    }
+
+    & .userQue {
+      padding-top: 24px;
+      /* margin-top: 8px; */
+      /* margin-bottom: 8px; */
+      display: flex;
+      justify-content: end;
+      width: 100%;
+
+      & .sectionDiv {
+        position: relative;
+        background-color: #324da0;
+        padding: 16px;
+        /* padding-left: 28px; */
+        border-radius: 8px;
+        /* width: 100%; */
+        display: inline-block;
+
+        /* @media (max-width: 425px) {
+          width: 100%;
+        } */
+
+        & p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        & .imageWrapper {
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translate(50%, -50%);
+          border-radius: 100%;
+          padding: 4px;
+          background-color: #b9cbff;
+          border: 5px solid rgb(250, 250, 250);
+        }
+      }
+    }
+
+    & .time {
+      font-size: 12px;
+      line-height: 16px;
+      color: rgb(107 114 128);
+      margin-top: 4px;
+      margin-left: 8px;
+    }
+  }
+
+  & .inputBar {
+    padding: 10px 16px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 4px;
+    background-color: white;
+
+    & form {
+      display: flex;
+      justify-content: space-between;
+
+      & input {
+        color: rgb(107 114 128);
+        width: 80%;
+        outline: none;
+        border: none;
+
+        &::placeholder {
+          color: rgb(179, 182, 189);
+        }
+      }
+
+      & button {
+        width: 30px;
+        height: 30px;
+        background-color: #324da0;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 28px;
+        color: white;
+      }
+    }
+  }
+
+  & .defaultMessage {
+    & p {
+      color: rgb(55 65 81);
+      font-size: 14px;
+      line-height: 20px;
+      background-color: rgb(229 231 235);
+      display: inline-block;
+      padding: 8px;
+      border-radius: 8px;
+      margin: 4px 0;
+    }
+  }
+  & .userSelectionMessage {
+    & .message {
+      display: flex;
+      justify-content: end;
+      & p {
+        color: rgb(55 65 81);
+        font-size: 14px;
+        line-height: 20px;
+        background-color: white;
+        border: 1px solid #324da0;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 8px;
+        margin: 4px 0;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #b4c7ff;
+          color: black;
+          border: 1px solid #b4c7ff;
+        }
+      }
+    }
+  }
+  & .userFeedback {
+    & .emojiRating {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      & i {
+        font-size: 30px;
+        color: rgb(165, 165, 165);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        &:first-child:hover {
+          color: #cd5c5c;
+        }
+        &:nth-child(2):hover {
+          color: #fcb713;
+        }
+        &:last-child:hover {
+          color: #086d38;
+        }
+      }
+    }
+  }
+
+  /* width */
+  & ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  & ::-webkit-scrollbar-track {
+    background: rgb(184, 201, 255);
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* Handle */
+  & ::-webkit-scrollbar-thumb {
+    background: rgb(105, 87, 189);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* Handle on hover */
+  & ::-webkit-scrollbar-thumb:hover {
+    background: rgb(95, 76, 179);
+  }
+
+  & .formWrapper {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(229 231 235);
+    color: rgb(55 65 81);
+
+    & p {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  & .userGetDataForm {
+    & input {
+      font-size: 14px;
+      line-height: 20px;
+      background-color: transparent;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 1px solid rgb(175, 175, 175);
+      outline: none;
+      width: 100%;
+
+      &::placeholder {
+        color: gray;
+      }
+    }
+    & button {
+      width: 120px;
+      padding: 5px;
+      text-align: center;
+      background-color: #324da0;
+      color: white;
+      font-size: 16px;
+      border-radius: 100px;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  & .makeYourChoice {
+    width: 85%;
+    margin: auto;
+    & div {
+      margin: 5px 10px;
+      font-size: 16px;
+      padding: 5px;
+      text-align: center;
+      color: #324da0;
+      background-color: white;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

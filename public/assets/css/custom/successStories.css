@@ -1,0 +1,104 @@
+.SuccessStoriesCards .singleCardContainer .singleCard {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  position: relative;
+}
+.SuccessStoriesCards .singleCardContainer .singleCard .scaleDiv {
+  height: 350px;
+
+  background-color: aqua;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+
+.SuccessStoriesCards .singleCardContainer:first-child .singleCard .scaleDiv,
+.SuccessStoriesCards .singleCardContainer:last-child .singleCard .scaleDiv {
+  background-color: beige;
+}
+
+/* .SuccessStoriesCards .singleCardContainer .singleCard img {
+  width: 100%;
+  
+  max-height: 200px;
+} */
+.SuccessStoriesCards .singleCardContainer .singleCard .scaleDiv {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.SuccessStoriesCards .singleCardContainer:first-child .singleCard .scaleDiv {
+  background-image: linear-gradient(to bottom, #cd5c5c5e, #cd5c5c75),
+    url("/assets/img/home/success-stories/information.jpg");
+}
+.SuccessStoriesCards .singleCardContainer:nth-child(2) .singleCard .scaleDiv {
+  background-image: linear-gradient(to bottom, #086d386b, #086d3896),
+    url("/assets/img/home/success-stories/tech-publication.jpg");
+}
+.SuccessStoriesCards .singleCardContainer:nth-child(3) .singleCard .scaleDiv {
+  background-image: linear-gradient(to bottom, #324da06b, #324da0ba),
+    url("/assets/img/home/success-stories/web-dev.jpg");
+}
+.SuccessStoriesCards .singleCardContainer:last-child .singleCard .scaleDiv {
+  background-image: linear-gradient(to bottom, #f47f2052, #f47f2073),
+    url("/assets/img/about-us/portfolio/applicationIntegration2.jpg");
+}
+
+.SuccessStoriesCards .singleCardContainer .singleCard h2 {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 10px;
+}
+.SuccessStoriesCards .singleCardContainer .singleCard {
+  overflow: hidden;
+}
+/* .SuccessStoriesCards .singleCardContainer .singleCard:hover .scaleDiv {
+  scale: 1.2;
+} */
+
+@media (max-width: 991px) {
+  .SuccessStoriesCards .singleCardContainer .singleCard .scaleDiv {
+    height: 250px;
+  }
+}
+
+/* =================================== */
+/* .ourAchievementContainer {
+  background-image: linear-gradient(
+    to bottom,
+    white 50%,
+    var(--tp-theme-bg-7) 50%
+  );
+} */
+.ourAchievement {
+  padding: 50px 0;
+  /* background-color: #1e2222; */
+}
+.ourAchievement .mainDiv {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  gap: 50px;
+  padding: 20px;
+}
+.ourAchievement .mainDiv * {
+  color: var(--tp-theme-vogue);
+  text-align: center;
+}
+.ourAchievement .mainDiv h2 {
+  font-weight: bold;
+}

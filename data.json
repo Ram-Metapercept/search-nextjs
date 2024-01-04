@@ -1,0 +1,221 @@
+[  {  "id": 1,
+"title":"Software Development",
+"page":"Homepage",
+ "link":"http://localhost:3000/#softwaredevelopment"
+},
+{  "id": 2,
+"title":"Technical Writing",
+"page":"Homepage",
+ "link":"http://localhost:3000/#technicalwriting"
+},
+{  "id": 3,
+"title":"Training & Certification",
+"page":"Homepage",
+ "link":"http://localhost:3000/#TrainingAndCertification"
+},
+{  "id": 4,
+"title":"Success Story",
+"page":"Homepage/success",
+ "link":"http://localhost:3000/#Success-Story"
+},
+{  "id": 5,
+"title":"Information Architect",
+"page":"Homepage/success",
+ "link":"http://localhost:3000/#technology-service"
+},
+
+{  "id": 6,
+"title":"Application Integration",
+"page":"Homepage/success",
+ "link":"http://localhost:3000/#Application-Integration"
+},
+{  "id": 7,
+"title":"Web Development",
+"page":"Homepage/success",
+ "link":"http://localhost:3000/#Web-Development"
+},
+{  "id": 8,
+"title":"Technical Publications",
+"page":"Homepage/success",
+ "link":"http://localhost:3000/#Technical-Publication"
+},
+{  "id": 9,
+"title":"Technical Services",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Technical-Services"
+},
+{  "id":10 ,
+"title":"Software Engineering",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Software-Engineering"
+},
+
+{  "id": 11,
+"title":"Technical Publications",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Technical-Publications"
+},
+{  "id": 13,
+"title":"Information Architecture",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Information-Architecture"
+},
+{  "id": 14,
+"title":"Content Migration",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Content-Migration"
+},
+{  "id": 15,
+"title":"Staff Augmentation",
+"page":"Homepage/provide",
+ "link":"http://localhost:3000/#Staff-Augmentation"
+},
+{  "id": 16,
+"title":"fintech & edutech",
+"page":"Homepage/with-whom-we-work",
+ "link":"http://localhost:3000/#fintech-edutech"
+},
+{  "id": 17,
+"title":"cloud computing",
+"page":"Homepage/with-whom-we-work",
+ "link":"http://localhost:3000/#cloud-computing"
+},
+{  "id": 18,
+"title":"storage & virtualization",
+"page":"Homepage/with-whom-we-work",
+ "link":"http://localhost:3000/#storage-virtualization"
+},
+{  "id": 19,
+"title":"ai & ml",
+"page":"Homepage/with-whom-we-work",
+ "link":"http://localhost:3000/#AI-Machine-learning"
+},
+{  "id": 20,
+"title":"automobile",
+"page":"Homepage/with-whom-we-work",
+ "link":"http://localhost:3000/#automobile-aerospage"
+},
+
+
+   {  "id": 21,
+    "title":"Our technology service offerings",
+    "page":"Services/service-detail-area",
+     "link":"http://localhost:3000/services/#technology-service"
+   },
+   {  "id": 22,
+    "title":"Helping organizations transform ideas into a products.",
+    "page":"Services/service-detail-area",
+     "link":"http://localhost:3000/services/#organizations-transform"
+   },
+
+   {
+    "id":23,
+    "title":"Software Development",
+    "page":"Services/feature-right",
+    "link":"http://localhost:3000/services/#Software-Development"
+   },
+   {
+    "id":24,
+    "title":"Training & Certification",
+    "page":"Services/feature-right",
+    "link":"http://localhost:3000/services/#Training-and-Certification"
+   },
+   {
+    "id":25,
+    "title":"Technical Writing",
+    "page":"Services/feature-left",
+    "link":"http://localhost:3000/services/#Technical-Writing"
+   },
+     {
+    "id":26,
+    "title":"Accelerated technical writing services and solutions",
+    "page":"Services/feature-left",
+    "link":"http://localhost:3000/services/#Accelerated-technical-writing-services-and-solutions."
+   },
+   {
+    "id":27,
+    "title":"Enterprise web development services and solutions",
+    "page":"Services/feature-right",
+    "link":"http://localhost:3000/services/#Enterprise-web-development-services-and-solutions."
+   },
+   {
+    "id":28,
+    "title":"Stay competitive with consistently updated professional skills",
+    "page":"Services/feature-right",
+    "link":"http://localhost:3000/services/#Stay-competitive-with-consistently-updated-professional-skills."
+   },
+   {
+    "id":29,
+    "title":"Solution we offer",
+    "page":"solution/Solution-we-offer",
+    "link":"http://localhost:3000/solutions/#Solution-we-offer"
+   }
+   ,
+   {
+    "id":30,
+    "title":"Embracing dynamic growth for our organization, clients, and employees",
+    "page":"aboutus",
+    "link":"http://localhost:3000/aboutus/#embracing-dynamic-growth-for-our-organization-clients-and-employees"
+   }
+   ,
+   {
+    "id":31,
+    "title":"Stay competitive with consistently updated professional skills",
+    "page":"aboutus/what-is-our-goal",
+    "link":"http://localhost:3000/aboutus/#what-our-goals"
+   }
+   ,
+   {
+    "id":32,
+    "title":"Our goal",
+    "page":"aboutus/what-is-our-goal",
+    "link":"http://localhost:3000/aboutus/#Our-goal"
+   }
+   ,
+   {
+    "id":33,
+    "title":"Our Vision",
+    "page":"aboutus/what-is-our-goal",
+    "link":"http://localhost:3000/aboutus/#Our-Vision"
+   }
+   ,
+   {
+    "id":34,
+    "title":"Our Values",
+    "page":"aboutus/what-is-our-goal",
+    "link":"http://localhost:3000/aboutus/#Our-Values"
+   }
+   ,
+   {
+    "id":35,
+    "title":"Our buisness Partner",
+    "page":"aboutus/our-buisness-partner",
+    "link":"http://localhost:3000/aboutus/#our-buisness-partners"
+   } ,
+   {
+    "id":36,
+    "title":"Software Development",
+    "page":"aboutus/portfolio",
+    "link":"http://localhost:3000/aboutus/#Software-Development"
+   },
+   {
+    "id":35,
+    "title":"Our buisness Partner",
+    "page":"aboutus/portfolio",
+    "link":"http://localhost:3000/aboutus/#Technical-Writing"
+   },
+   {
+    "id":35,
+    "title":"Our buisness Partner",
+    "page":"aboutus/portfolio",
+    "link":"http://localhost:3000/aboutus/#Application-Integration"
+   },
+   {
+    "id":36,
+    "title":"With experience from top companies",
+    "page":"aboutus/company/page-area",
+    "link":"http://localhost:3000/aboutus/company/#With-experience-from-top-companies"
+   }
+  
+  
+  ]
